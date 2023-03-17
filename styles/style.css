@@ -307,8 +307,13 @@ nav a{
     gap: 100px;
 }
 .services img{
-    width: 40%;
     object-fit: scale-down;
+    object-position: bottom;
+    flex-basis: 50%;
+}
+
+.services_content{
+    flex-basis: 50%;
 }
 
 .services_content h2{
@@ -322,11 +327,13 @@ nav a{
     width: 100%;
     margin-top: 100px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .services_button a{
-    width: 30%;
+    width: 170px;
+    margin-bottom: 20px;
     text-align: center;
     display: block;
 }
@@ -348,9 +355,8 @@ main h2 span{
     color: #113366;
 }
 
-.main_paragraph{
-    width: 60%;
-    margin: 20px auto;
+.main_subtittle{
+    margin: 30px auto;
 }
 
 .carts{
