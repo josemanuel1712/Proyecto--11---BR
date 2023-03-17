@@ -93,42 +93,25 @@ h2{
     background-color: #77AADD;
 }
 
+.hcontact a{
+    text-decoration: none;
+}
+
 .hcontact .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.hcontact_element{
+    display: flex;
+    align-items: center;
+}
+
 .hcontact_element span, .hcontact_element a{
+    margin-left: 5px;
     margin-right: 15px;
 }
-
-.hcontact_brand{
-    width: 27px; height: 27px;
-    padding: 5px;
-
-    color: #F2F2F2;;
-    text-align: center;
-    text-decoration: none;
-
-    border-radius: 100%;
-    background-color: #0088CC;
-    display: inline-block;
-}
-
-.hcontact_lang{
-    width: 27px; height: 27px;
-    padding: 5px 0 ;
-
-    color: #113366;
-    text-align: center;
-    text-decoration: none;
- 
-    border-radius: 100%;
-    background-color: #F2F2F2 ;
-    display: inline-block;
-} 
-
 
 
 /*--- HEADER ---*/
@@ -204,11 +187,14 @@ nav a{
 
 .carousel__buttons button{
 	width: 30px; height: 30px;
-	border-radius: 100%;
+    padding: 0;
 	border: none;
-    color: #F8F8F8;
+    cursor: pointer;
 
-	background-color: #3535357a;
+	background-color: transparent;
+}
+.carousel__buttons button:hover{
+    filter: invert(75%);
 }
 
 .carousel__lista{
@@ -359,13 +345,51 @@ main h2 span{
     margin: 30px auto;
 }
 
+.main_description{
+    margin-bottom: 50px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.main_description h3{
+    color: #113366;
+}
+
+.main_description div{
+    flex-basis: 48%;
+}
+
+
+/*-- Carts --*/
 .carts{
     display: flex;
     gap: 20px;
 }
 
 .carts_element{
+    text-decoration: none;
+    color: #1D1D1F;
     background-color: #F8F8F8;
+    transition: all 0.2s;
+}
+.carts_element h3{
+    color: #113366;
+}
+
+.carts_element:hover{
+    background-color: #77AADD;
+}
+.carts_element:hover p, 
+.carts_element:hover h3,
+.carts_element:hover svg path{
+    color: #F8F8F8;
+    fill: #F8F8F8;
+    stroke: #F8F8F8;
+}
+.carts_element:hover svg rect{
+    stroke: #F8F8F8;
 }
 
 
