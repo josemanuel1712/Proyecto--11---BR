@@ -529,3 +529,67 @@ main h2 span{
 .testimonials_content h3 span{
     color: #113366;
 }
+
+
+
+/*--- FOOTER ---*/
+footer{
+    color: #ffffff;
+    background-color: #113366;
+}
+
+.footer_pcontent{
+    padding: 50px 0;
+    display: flex;
+}
+
+.footer_pcontent div{
+    flex-basis: 20%;
+}
+
+.footer_pcontent ul{
+    padding: 0;
+}
+
+.footer_pcontent li{
+    margin-bottom: 8px;
+    list-style: none;
+}
+
+.footer_pcontent a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer_pcontent div:first-of-type{
+    flex-basis: 50%;
+}
+
+.footer_pcontent div:first-of-type img{
+    width: 100px;
+}
+
+.footer_pcontent div:first-of-type p{
+    width: 300px;
+}
+
+
+/*-- Copyright --*/
+.footer_copy{
+    background-color: #0055AA;
+}
+
+.footer_copy .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_copy a{
+    margin-right: 30px;
+    color: #F2F2F2;
+    text-decoration: none;
+}
+.footer_copy a:last-of-type{
+    margin-right: 0;
+}
